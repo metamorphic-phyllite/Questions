@@ -1,0 +1,25 @@
+id,question_id,body,date_written,answerer_name,answerer_email,reported,helpful
+1,36,"Supposedly suede, but I think its synthetic",1599958385988,"sillyguy","first.last@gmail.com",0,1
+2,13,"Some kind of recycled rubber, works great!",1615008233634,"marcanthony","first.last@gmail.com",0,2
+3,23,"Some kind of recycled rubber, works great!",1592693405366,"iluvdogz","first.last@gmail.com",0,3
+4,26,"No",1596547018643,"Seller","first.last@gmail.com",0,4
+5,1,"Something pretty soft but I can't be sure",1599990560555,"metslover","first.last@gmail.com",0,5
+6,28,"I wouldn't machine wash it",1611767721834,"warmkid","first.last@cbs.com",1,6
+7,1,"Its the best! Seriously magic fabric",1614451524662,"metslover","first.last@gmail.com",0,7
+8,1,"DONT BUY IT! It's bad for the environment",1600552162548,"metslover","first.last@gmail.com",0,8
+9,28,"Only if you want to ruin it!",1612517216955,"warmkid","first.last@cbs.com",1,9
+10,34,"I've thrown it in the wash and it seems fine",1600421746125,"skilover","first.last@cbs.com",0,1
+11,34,"It says not to",1596810657486,"skilover","first.last@cbs.com",0,2
+12,34,"Yes",1596584232121,"skilover","first.last@cbs.com",0,3
+13,36,"Something pretty soft but I can't be sure",1600528759352,"sillyguy","first.last@gmail.com",0,4
+14,29,"Something pretty soft but I can't be sure",1612517216955,"superman","first.last@gmail.com",0,5
+15,36,"Its the best! Seriously magic fabric",1615419078495,"sillyguy","first.last@gmail.com",0,6
+16,13,"Rubber",1608391381140,"Seller","first.last@gmail.com",0,7
+17,14,"China",1618481897469,"Seller","first.last@gmail.com",0,8
+18,17,"Runs small, I'd say",1599943428768,"warmkid","first.last@gmail.com",0,9
+19,18,"I wouldn't machine wash it",1595613922158,"dschulman","first.last@gmail.com",0,1
+20,18,"Only if you want to ruin it!",1607104035308,"dschulman","first.last@gmail.com",0,2
+21,18,"I've thrown it in the wash and it seems fine",1607469189925,"dschulman","first.last@gmail.com",0,3
+22,18,"It says not to",1589087728855,"dschulman","first.last@gmail.com",0,4
+23,11,"It ships from the facility in Tulsa",1618481897469,"dschulman","first.last@gmail.com",0,25
+24,21,"No?",1616293796317,"dschulman","first.last@gmail.com",0,6
