@@ -19,7 +19,7 @@ const trasformStream = new Transform({
   //transform method on Trasform stream
   transform(chunk, encoding, cb) {
     try {
-      var obj = chunk.toString();
+      var obj = Jchunk.toString();
       console.log(obj);
       // conn.createQuestions(JSON.parse(chunk), (err, data) => {
       //   if (err) {
