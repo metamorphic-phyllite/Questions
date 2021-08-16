@@ -1,7 +1,7 @@
-DROP DATABASE questionsanswers;
-CREATE DATABASE questionsanswers;
+-- DROP DATABASE questionsanswers;
+-- CREATE DATABASE questionsanswers;
 
-
+DROP TABLE IF EXISTS questions CASCADE;
 CREATE TABLE questions (
   id serial PRIMARY KEY,
   product_id INT,
@@ -13,21 +13,23 @@ CREATE TABLE questions (
   helpful INT
 );
 
+DROP TABLE IF EXISTS answers CASCADE;
 CREATE TABLE answers (
   id serial PRIMARY KEY,
-  questions_id INT NOT NULL,
-  FOREIGN KEY (questions_id) REFERENCES questions (id),
+  question_id INT NOT NULL,
   body VARCHAR (255),
   date_written DATE,
   answerer_name VARCHAR (60),
   answerer_email VARCHAR (60),
   reported BOOLEAN,
-  helpful INT
+  helpful INT,
+  FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 );
 
+DROP TABLE IF EXISTS photos CASCADE;
 CREATE TABLE photos (
   id serial PRIMARY KEY,
-  answers_id INT NOT NULL,
-  FOREIGN KEY (answers_id) REFERENCES answers (id),
-  url VARCHAR (120)
+  answer_id INT NOT NULL,
+  url VARCHAR (255),
+  FOREIGN KEY (answer_id) REFERENCES answers(id) ON DELETE CASCADE
 );
