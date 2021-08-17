@@ -1,7 +1,7 @@
 const conn = require("../../server/controllers/controller");
 const { Writable } = require("stream");
 
-
+var counter = 0;
 //create var writeStream that opens a write stream to postgres database
 module.exports = {
   writeQuestionsStream: new Writable({
@@ -10,10 +10,13 @@ module.exports = {
         if (err) {
           console.log("Error adding data to qestions DB: ", err);
         } else {
-          console.log("Added to Questions Data!");
+          counter++;
+          if (counter % 10000 === 0) {
+            console.log("Added to Questions DB!", counter);
+          }
+          done();
         }
       });
-      done();
     }
   }),
   writeAnswersStream: new Writable({
@@ -22,10 +25,13 @@ module.exports = {
         if (err) {
           console.log("Error adding data to answers DB: ", err);
         } else {
-          console.log("Added to Answers Data!");
+          counter++;
+          if (counter % 10000 === 0) {
+            console.log("Added to Answers DB!", counter);
+          }
+          done();
         }
       });
-      done();
     }
   }),
   writePhotosStream: new Writable({
@@ -34,10 +40,13 @@ module.exports = {
         if (err) {
           console.log("Error adding data to photos DB: ", err);
         } else {
-          console.log("Added to Photos Data!");
+          counter++;
+          if (counter % 10000 === 0) {
+            console.log("Added to Photos DB!", counter);
+          }
+          done();
         }
       });
-      done();
     }
   })
 };

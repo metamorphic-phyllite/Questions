@@ -22,7 +22,8 @@ module.exports = {
   },
   createAnswers: (req, res) => {
     pool.query(
-      `INSERT INTO answers (id, question_id, body, date_written, answerer_name, answerer_email, reported, helpful) VALUES (${req.id}, ${req.question_id}, '${req.body}', '${req.date_written}', '${req.answerer_name}', '${req.answerer_email}', ${req.reported}, ${req.helpful})`,
+      `INSERT INTO answers (id, question_id, body, date_written, answerer_name, answerer_email, reported, helpful) VALUES
+      (${req.id}, ${req.question_id}, '${req.body}', '${req.date_written}', '${req.answerer_name}', '${req.answerer_email}', ${req.reported}, ${req.helpful})`,
       (err, data) => {
         if (err) {
           res(err, null);
