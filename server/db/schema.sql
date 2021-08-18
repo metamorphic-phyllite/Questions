@@ -26,10 +26,10 @@
 --   FOREIGN KEY (question_id) REFERENCES questions(id) ON DELETE CASCADE
 -- );
 
-DROP TABLE IF EXISTS photos CASCADE;
-CREATE TABLE photos (
-  id serial PRIMARY KEY,
-  answer_id INT NOT NULL,
-  url VARCHAR (255),
-  FOREIGN KEY (answer_id) REFERENCES answers(id) ON DELETE CASCADE
-);
+-- DROP TABLE IF EXISTS photos CASCADE;
+-- CREATE TABLE photos (
+--   id serial PRIMARY KEY,
+--   answer_id INT NOT NULL,
+--   url VARCHAR (255),
+--   FOREIGN KEY (answer_id) REFERENCES answers(id) ON DELETE CASCADE
+-- );
