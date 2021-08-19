@@ -1,0 +1,12 @@
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 20
+      arrivalRate: 150
+      name: Warm up
+scenarios:
+  - name: "Get Questions"
+    flow:
+      - get:
+          url: "/qa/questions/:question_id/answers"
+      - think: 5
