@@ -98,16 +98,16 @@ module.exports = {
   },
 
   reportAnswer: (request, response) => {
-    const { question_id } = request.params;
+    const { answer_id } = request.params;
     db.query(
       `
       UPDATE
-        questions
+        answers
       SET
         reported = 't'
       WHERE
         id = $1`,
-      [question_id])
+      [answer_id])
       .then((result) => {
         response.status(204).json(result.rows);
       })
