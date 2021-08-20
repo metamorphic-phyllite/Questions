@@ -2,23 +2,23 @@
 -- CREATE DATABASE questionsanswers;
 
 -- DROP TABLE IF EXISTS questions CASCADE;
-CREATE TABLE questions (
-  id serial PRIMARY KEY,
-  product_id INT,
-  body VARCHAR (255),
-  question_date DATE,
-  asker_name VARCHAR (60),
-  asker_email VARCHAR (60),
-  reported BOOLEAN,
-  helpful INT
-);
+-- CREATE TABLE questions (
+--   id serial PRIMARY KEY,
+--   product_id INT,
+--   question_body VARCHAR (255),
+--   question_date DATE,
+--   asker_name VARCHAR (60),
+--   asker_email VARCHAR (60),
+--   reported BOOLEAN,
+--   helpful INT
+-- );
 
 -- DROP TABLE IF EXISTS answers CASCADE;
 -- CREATE TABLE answers (
 --   id serial PRIMARY KEY,
 --   question_id INT NOT NULL,
 --   body VARCHAR (255),
---   date_written DATE,
+--   date DATE,
 --   answerer_name VARCHAR (60),
 --   answerer_email VARCHAR (60),
 --   reported BOOLEAN,

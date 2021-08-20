@@ -2,7 +2,7 @@ const stream = require('stream');
 const util = require('util');
 const csv = require('csvtojson');
 
-const { readQuestionStream, readAnswersStream, readPhotosStream } = require('./streams/readStreams');
+const { readQuestionsStream, readAnswersStream, readPhotosStream } = require('./streams/readStreams');
 const { transformQuestionsStream, transformAnswersStream, transformPhotosStream } = require('./streams/transformStreams');
 const { writeQuestionsStream, writeAnswersStream, writePhotosStream } = require('./streams/writeStreams');
 
@@ -56,8 +56,8 @@ const photosPipeline = async () => {
   }
 };
 questionsPipeline();
-answersPipeline();
-photosPipeline();
+// answersPipeline();
+// photosPipeline();
 
 
 
