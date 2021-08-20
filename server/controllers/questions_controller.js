@@ -40,7 +40,7 @@ module.exports = {
         }
       })
       .catch((err) => {
-        res.send("err in query call");
+        res.send("err in query call" + err);
       });
     },
     addQuestion: (req, res) => {
@@ -74,7 +74,7 @@ module.exports = {
           response.status(204).json(result.rows);
         })
         .catch((err) => {
-          response.send("ERROR in UpdateHelpful Questions: ", err);
+          response.send("ERROR in UpdateHelpful Questions: " + err);
         });
     },
     reportQuestion: (request, response) => {
@@ -92,7 +92,7 @@ module.exports = {
           response.status(204).json(result.rows);
         })
         .catch((err) => {
-          response.send("ERROR in Update Report Questions: ", err);
+          response.send("ERROR in Update Report Questions: " + err);
         });
     }
   }

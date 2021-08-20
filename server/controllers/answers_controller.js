@@ -93,7 +93,7 @@ module.exports = {
         response.status(204).json(result.rows);
       })
       .catch((err) => {
-        response.send("ERROR in UpdateHelpful Answers: ", err);
+        response.send("ERROR in UpdateHelpful Answers: " + err);
       });
   },
 
@@ -112,7 +112,7 @@ module.exports = {
         response.status(204).json(result.rows);
       })
       .catch((err) => {
-        response.send("ERROR in Update Report Answers: ", err);
+        response.send("ERROR in Update Report Answers: " + err);
       });
   },
 };

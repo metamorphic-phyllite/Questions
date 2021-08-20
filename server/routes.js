@@ -9,6 +9,9 @@ router.get('/', function (req, res) {
   res.setHeader('Content-Type', 'text/plain; charset=utf-8')
   res.end('Hello World!')
 });
+router.get('/loaderio-63de33aace9b21eab3836f9d10a4d860.txt', (req, res) => {
+  res.end('loaderio-63de33aace9b21eab3836f9d10a4d860');
+});
 router.get('/qa/questions/:product_id', getQuestion); //tested avg: 8ms
 router.get('/qa/questions/:question_id/answers', getAnswer);
 router.post('/qa/questions', addQuestion);
